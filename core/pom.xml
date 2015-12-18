@@ -12,6 +12,7 @@
 
     <artifactId>gwt-dagger</artifactId>
     <name>GWT Dagger</name>
+    <description>Core framework for gwt-dagger.</description>
 
     <dependencies>
         <dependency>

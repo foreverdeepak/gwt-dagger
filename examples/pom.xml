@@ -12,6 +12,7 @@
     </parent>
 
     <artifactId>gwt-dagger-examples</artifactId>
+    <name>GWT Dagger Examples</name>
 
     <modules>
         <module>simple</module>

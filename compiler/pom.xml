@@ -12,9 +12,9 @@
 
     <artifactId>gwt-dagger-compiler</artifactId>
 
-    <name>Dagger Compiler</name>
+    <name>GWT Dagger Compiler</name>
     <description>
-        Tools to generate Dagger injection and module adapters from annotated code and validate them.
+        Tools to generate Dagger/GWT injection and module adapters from annotated code and validate them.
     </description>
 
     <dependencies>
@@ -23,6 +23,14 @@
             <artifactId>gwt-dagger</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>gwt-dagger</artifactId>
+            <version>${project.version}</version>
+            <scope>test</scope>
+            <classifier>tests</classifier>
+        </dependency>
+
         <dependency>
             <groupId>com.google.auto</groupId>
             <artifactId>auto-common</artifactId>
@@ -42,7 +50,6 @@
             <groupId>com.google.auto.value</groupId>
             <artifactId>auto-value</artifactId>
             <optional>true</optional>
-            <version>1.0</version>
         </dependency>
 
         <dependency>
@@ -50,28 +57,25 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>gwt-dagger</artifactId>
-            <version>${project.version}</version>
-            <scope>test</scope>
-            <classifier>tests</classifier>
-        </dependency>
+
         <dependency>
             <groupId>com.google.testing.compile</groupId>
             <artifactId>compile-testing</artifactId>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava-testlib</artifactId>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>com.google.truth</groupId>
             <artifactId>truth</artifactId>
